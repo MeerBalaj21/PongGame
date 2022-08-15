@@ -50,13 +50,13 @@ public class ScoreManager : GameStart
         PlayerLoseText.text = ScoreEnemy.ToString();
         PlayerWinText.text = ScorePlayer.ToString();
 
-        if (ScoreEnemy == 3)
+        if (ScoreEnemy == 10)
         {
             PlayerLose.SetActive(true);
             ResetScore();
             ResetGame();
         }
-        if (ScorePlayer == 3)
+        if (ScorePlayer == 10)
         {
             PlayerWin.SetActive(true);
             ResetScore();
